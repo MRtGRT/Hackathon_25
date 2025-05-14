@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard UI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: white;
+      color: #333;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .tabs {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+    .tab {
+      padding: 0.5rem 1rem;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+    }
+    .tab.active {
+      border-bottom: 2px solid #000;
+      font-weight: bold;
+    }
+    .top-three {
+      display: flex;
+      justify-content: space-around;
+      align-items: end;
+      margin-bottom: 2rem;
+    }
+    .leader {
+      text-align: center;
+    }
+    .leader img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #ccc;
+    }
+    .leader.first img {
+      width: 80px;
+      height: 80px;
+      border: 3px solid gold;
+    }
+    .leader .name {
+      font-weight: bold;
+    }
+    .leader .score {
+      color: #888;
+    }
+    .list {
+      border-top: 1px solid #ddd;
+    }
+    .list-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    .list-item .info {
+      display: flex;
+      align-items: center;
+    }
+    .list-item img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin-right: 0.5rem;
+    }
+    .list-item .score {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+ 
+    <div class="top-three">
+      <div class="leader">
+        <img src="https://via.placeholder.com/60" alt="Second Place">
+        <div class="name">Jackson</div>
+        <div class="score">1847</div>
+      </div>
+      <div class="leader first">
+        <img src="https://via.placeholder.com/80" alt="First Place">
+        <div class="name">Eiden</div>
+        <div class="score">2430</div>
+      </div>
+      <div class="leader">
+        <img src="https://via.placeholder.com/60" alt="Third Place">
+        <div class="name">Emma</div>
+        <div class="score">1674</div>
+      </div>
+    </div>
+
+    <div class="list">
+      <div class="list-item">
+        <div class="info">
+          <img src="https://via.placeholder.com/40" alt="User">
+          <span>Sebastian</span>
+        </div>
+        <div class="score">1124</div>
+      </div>
+      <div class="list-item">
+        <div class="info">
+          <img src="https://via.placeholder.com/40" alt="User">
+          <span>Jason</span>
+        </div>
+        <div class="score">875</div>
+      </div>
+      <div class="list-item">
+        <div class="info">
+          <img src="https://via.placeholder.com/40" alt="User">
+          <span>Natalie</span>
+        </div>
+        <div class="score">774</div>
+      </div>
+      <div class="list-item">
+        <div class="info">
+          <img src="https://via.placeholder.com/40" alt="User">
+          <span>Serenity</span>
+        </div>
+        <div class="score">723</div>
+      </div>
+      <div class="list-item">
+        <div class="info">
+          <img src="https://via.placeholder.com/40" alt="User">
+          <span>Hannah</span>
+        </div>
+        <div class="score">559</div>
+      </div>
+      <div class="list-item">
+        <div class="info">
+          <img src="https://via.placeholder.com/40" alt="User">
+          <span>Sebastian</span>
+        </div>
+        <div class="score">1124</div>
+      </div>
+      <div class="list-item">
+        <div class="info">
+          <img src="https://via.placeholder.com/40" alt="User">
+          <span>Sebastian</span>
+        </div>
+        <div class="score">1124</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
