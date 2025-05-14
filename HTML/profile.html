@@ -3,40 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../CSS/about.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="stylesheet" href="../CSS/navigation.css">
-  <title>Document</title>
+  <title>User Profile</title>
 </head>
-<body>
-     <!-- HEADER -->
+<body class="bg-gray-100">
+
+    <!-- HEADER -->
   <header>
     <div class="header-container">
       <div class="logo">Food <b>Donate</b></div>
       <nav>
         <a class = "links" href="home.html">Home</a>
         <a class = "links" href="about.html">About</a>
-        <a class = "links" href="contact.html">Contact</a>
         <a class = "links" href="contributor.html" class="active">Contributors</a>
-        <a class = "links" href="partner.html">Partners</a>
+        <a class = "links" href="partners.html">Partners</a>
         <a class = "links" href="profile.html">Profile</a>
-        <a  href="index.html" class="login-btn">Login</a>
+        <a   href="index.html" class="login-btn">Login</a>
       </nav>
     </div>
   </header>
 
-  <section>
-    <div>
-      <p>about</p>
+  <!-- PROFILE SECTION -->
+  <section class="max-w-7xl mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
+    <!-- Profile Header -->
+    <div class="text-center">
+      <img src="../IMAGES/place_holder.jpeg" alt="User Profile" class="w-32 h-32 mx-auto rounded-full border-4 border-green-500 mb-4">
+      <h2 class="text-3xl font-bold text-gray-800">John Doe</h2>
+      <p class="text-lg text-gray-500">Email: john.doe@example.com</p>
     </div>
+
+<!-- Contributions List -->
+<div class="mt-8">
+  <h3 class="text-2xl font-semibold text-gray-800 mb-4">Contributions</h3>
+  <div class="space-y-4">
+    <!-- Contribution 1 -->
+    <div class="group relative bg-gray-50 p-4 rounded-lg shadow-md transition-all duration-500">
+      <div class="text-gray-700">
+        <h4 class="font-semibold">Meal Distribution Event</h4>
+        <p>Contributed 100 meals to a local food bank in December 2024.</p>
+      </div>
+      <div class="absolute inset-0 bg-green-500 text-white p-4 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        <p>Impact made by distributing 100 meals to families in need during the December 2024 food drive. Helping those in our community during the holidays!</p>
+      </div>
+    </div>
+
+    <!-- Contribution 2 -->
+    <div class="group relative bg-gray-50 p-4 rounded-lg shadow-md transition-all duration-500">
+      <div class="text-gray-700">
+        <h4 class="font-semibold">Fundraising Campaign</h4>
+        <p>Raised $500 for hunger relief efforts in 2023.</p>
+      </div>
+      <div class="absolute inset-0 bg-green-500 text-white p-4 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        <p>This campaign raised $500, which went directly to hunger relief programs and initiatives across multiple communities in 2023. Every dollar helped feed those in need.</p>
+      </div>
+    </div>
+
+    <!-- Contribution 3 -->
+    <div class="group relative bg-gray-50 p-4 rounded-lg shadow-md transition-all duration-500">
+      <div class="text-gray-700">
+        <h4 class="font-semibold">Community Outreach</h4>
+        <p>Organized a food drive with local volunteers in November 2023.</p>
+      </div>
+      <div class="absolute inset-0 bg-green-500 text-white p-4 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        <p>In November 2023, local volunteers collected food donations that were distributed to over 150 families. A truly community-driven effort to fight hunger.</p>
+      </div>
+    </div>
+
+    <!-- Add more contributions as needed -->
+  </div>
+</div>
+
   </section>
 
-   <!-- Contact Section -->
-   <footer class="contact">
-    <h2>Ready to Share Your Extra Food?</h2>
-    <p>Whether it’s a one-time event or a recurring partnership — we’d love to work with you.</p>
-    <button>Contact Us</button>
-    <button>WhatsApp Now</button>
-    <button>Download the App</button>
-   </footer>
+  <!-- FOOTER -->
+  <footer class="contact bg-yellow-100 text-center py-12">
+    <h2 class="text-2xl font-semibold mb-4">Ready to Share Your Extra Food?</h2>
+    <p class="text-lg mb-6">Whether it’s a one-time event or a recurring partnership — we’d love to work with you.</p>
+    <button class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600">Contact Us</button>
+    <button class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 mt-4">WhatsApp Now</button>
+    <button class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 mt-4">Download the App</button>
+  </footer>
+
 </body>
 </html>

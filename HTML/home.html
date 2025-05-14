@@ -1,42 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../CSS/home.css">
-  <link rel="stylesheet" href="../CSS/navigation.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../CSS/navigation.css">
+    <title>Document</title>
 </head>
-<body>
-     <!-- HEADER -->
-  <header>
-    <div class="header-container">
-      <div class="logo">Food <b>Donate</b></div>
-      <nav>
-        <a class = "links" href="home.html">Home</a>
-        <a class = "links" href="about.html">About</a>
-        <a class = "links" href="contact.html">Contact</a>
-        <a class = "links" href="contributor.html" class="active">Contributors</a>
-        <a class = "links" href="partner.html">Partners</a>
-        <a class = "links" href="profile.html">Profile</a>
-        <a   href="index.html" class="login-btn">Login</a>
-      </nav>
-    </div>
-  </header>
+<body class="bg-gray-100 flex flex-col min-h-screen">
 
-  <section>
-    <div>
-      <p>hi there</p>
-    </div>
-  </section>
+     <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Food <b>Donate</b></div>
+            <nav>
+                <a class="links" href="home.html">Home</a>
+                <a class="links" href="about.html">About</a>
+                <a class="links" href="contributor.html" class="active">Contributors</a>
+                <a class="links" href="partners.html">Partners</a>
+                <a class="links" href="profile.html">Profile</a>
+                <a href="index.html" class="login-btn">Login</a>
+            </nav>
+        </div>
+    </header>
 
-   <!-- Contact Section -->
-   <footer class="contact">
-    <h2>Ready to Share Your Extra Food?</h2>
-    <p>Whether it’s a one-time event or a recurring partnership — we’d love to work with you.</p>
-    <button>Contact Us</button>
-    <button>WhatsApp Now</button>
-    <button>Download the App</button>
-   </footer>
+
+    <!-- Slick Carousel Section -->
+    <div class="carousel-container mb-8">
+        <div class="slick-carousel">
+            <div>
+                <img src="../IMAGES/p1.jpeg" alt="Slide 1" class="w-full h-96 object-cover">
+            </div>
+            <div>
+                <img src="../IMAGES/p4.jpeg" alt="Slide 2" class="w-full h-96 object-cover">
+            </div>
+            <div>
+                <img src="../IMAGES/p3.jpeg" alt="Slide 3" class="w-full h-96 object-cover">
+            </div>
+        </div>
+    </div>
+
+   
+    <!-- Our Works Section -->
+    <div class="photo py-16 text-center">
+        <p class="text-4xl font-extrabold mb-6 underline">Our Works</p>
+        <p class="text-xl mb-12 opacity-80">"Look what we can do together."</p>
+        
+        <div class="wrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="box relative overflow-hidden rounded-lg shadow-lg transform transition-all duration-300 hover:scale-95">
+                <img src="../IMAGES/p1.jpeg" alt="Image 1" class="w-full h-64 object-cover transition-transform duration-300 ease-in-out hover:scale-90">
+                <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Dark overlay -->
+                <div class="absolute inset-0 flex justify-center items-center text-white opacity-100 text-xl font-semibold">
+                    <p>Feeding the Hungry</p>
+                </div>
+            </div>
+            <div class="box relative overflow-hidden rounded-lg shadow-lg transform transition-all duration-300 hover:scale-95">
+                <img src="../IMAGES/p3.jpeg" alt="Image 2" class="w-full h-64 object-cover transition-transform duration-300 ease-in-out hover:scale-90">
+                <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Dark overlay -->
+                <div class="absolute inset-0 flex justify-center items-center text-white opacity-100 text-xl font-semibold">
+                    <p>Combating Food Waste</p>
+                </div>
+            </div>
+            <div class="box relative overflow-hidden rounded-lg shadow-lg transform transition-all duration-300 hover:scale-95">
+                <img src="../IMAGES/p4.jpeg" alt="Image 3" class="w-full h-64 object-cover transition-transform duration-300 ease-in-out hover:scale-90">
+                <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Dark overlay -->
+                <div class="absolute inset-0 flex justify-center items-center text-white opacity-100 text-xl font-semibold">
+                    <p>Together for a Better World</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Door Pickup Section -->
+    <div class="deli py-16 text-center bg-gray-50">
+        <p class="text-4xl font-extrabold text-gray-800 mb-6 underline">DOOR PICKUP</p>
+        <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">"Your donation will be immediately collected and sent to needy people. We are committed to making food donation easier and more accessible." </p>
+        <img src="../IMAGES/delivery.gif" alt="Delivery" class="mx-auto w-48 h-auto">
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="contact bg-yellow-100 text-center py-12">
+        <h2 class="text-2xl font-semibold mb-4">Ready to Share Your Extra Food?</h2>
+        <p class="text-lg mb-6">Whether it’s a one-time event or a recurring partnership — we’d love to work with you.</p>
+        <button class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600">Contact Us</button>
+        <button class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 mt-4">WhatsApp Now</button>
+        <button class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 mt-4">Download the App</button>
+    </footer>
+
+    <script>
+        // Initialize the Slick carousel with autoplay enabled
+        $(document).ready(function(){
+            $('.slick-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                autoplay: true,       // Enable autoplay
+                autoplaySpeed: 3000,  // Set the autoplay interval (3 seconds)
+            });
+        });
+    </script>
 </body>
 </html>

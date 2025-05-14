@@ -3,40 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../CSS/about.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../CSS/navigation.css">
-  <title>Document</title>
+  <title>About - Food Donate</title>
 </head>
-<body>
-     <!-- HEADER -->
+<body class="bg-gray-50">
+
+  <!-- HEADER -->
   <header>
     <div class="header-container">
       <div class="logo">Food <b>Donate</b></div>
       <nav>
-        <a class = "links" href="home.html">Home</a>
-        <a class = "links" href="about.html">About</a>
-        <a class = "links" href="contact.html">Contact</a>
-        <a class = "links" href="contributor.html" class="active">Contributors</a>
-        <a class = "links" href="partner.html">Partners</a>
-        <a class = "links" href="profile.html">Profile</a>
+        <a class="links" href="home.html">Home</a>
+        <a class="links" href="about.html" class="active">About</a>
+        <a class="links" href="contributor.html">Contributors</a>
+        <a class="links" href="partners.html">Partners</a>
+        <a class="links" href="profile.html">Profile</a>
         <a href="index.html" class="login-btn">Login</a>
       </nav>
     </div>
   </header>
 
-  <section>
-    <div>
-      <p>about</p>
+  <!-- About Section -->
+  <section class="about-section py-16 px-6 sm:px-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-extrabold text-gray-800 mb-4">About Us</h2>
+      <p class="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+        At Food Donate, we believe in the power of sharing. Our mission is to reduce food waste by connecting donors—such as restaurants, hotels, and individuals—with those in need. Together, we can make a significant impact in solving hunger and creating a more sustainable future.
+      </p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Mission Block 1 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center transform transition-all duration-300 hover:scale-105">
+          <img src="../IMAGES/place_holder.jpeg" alt="Food Waste" class="w-full h-40 object-cover rounded-t-lg mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Mission</h3>
+          <p class="text-gray-600">
+            We aim to connect surplus food with those who need it most, reducing food waste and ensuring that no one goes hungry.
+          </p>
+        </div>
+
+        <!-- Mission Block 2 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center transform transition-all duration-300 hover:scale-105">
+          <img src="../IMAGES/place_holder.jpeg" alt="Community" class="w-full h-40 object-cover rounded-t-lg mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Impact</h3>
+          <p class="text-gray-600">
+            By donating food, you help create a stronger, more connected community. Together, we can build a world where hunger is a thing of the past.
+          </p>
+        </div>
+
+        <!-- Mission Block 3 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center transform transition-all duration-300 hover:scale-105">
+          <img src="../IMAGES/volunteers.jpg" alt="Volunteers" class="w-full h-40 object-cover rounded-t-lg mb-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Join Us</h3>
+          <p class="text-gray-600">
+            Become a part of our movement. Whether you're donating food or volunteering, your contributions are making a real difference.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-   <!-- Contact Section -->
-   <footer class="contact">
-    <h2>Ready to Share Your Extra Food?</h2>
-    <p>Whether it’s a one-time event or a recurring partnership — we’d love to work with you.</p>
-    <button>Contact Us</button>
-    <button>WhatsApp Now</button>
-    <button>Download the App</button>
-   </footer>
+  <!-- FOOTER -->
+  <footer class="contact bg-yellow-100 text-center py-12">
+    <h2 class="text-2xl font-semibold mb-4">Ready to Share Your Extra Food?</h2>
+    <p class="text-lg mb-6">Whether it’s a one-time event or a recurring partnership — we’d love to work with you.</p>
+    <button class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600">Contact Us</button>
+    <button class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 mt-4">WhatsApp Now</button>
+    <button class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 mt-4">Download the App</button>
+  </footer>
+
 </body>
 </html>
